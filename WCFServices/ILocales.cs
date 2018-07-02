@@ -13,7 +13,7 @@ namespace WCFServices
     public interface ILocales
     {
         [OperationContract]
-        [WebGet]
-        List<Local> ListarLocal();
+        [WebInvoke(Method = "POST")]
+        List <Local> ListarLocal();
     }
 }

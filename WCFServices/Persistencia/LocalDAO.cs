@@ -15,7 +15,7 @@ namespace WCFServices.Persistencia
         {
             List<Local> localesEncontrados = new List<Local>();
             Local localEncontrado = null;
-            string sql = "SELECT * from tienda";
+            string sql = "SELECT * from local";
             using (SqlConnection conexion = new SqlConnection(CadenaConexion))
             {
                 conexion.Open();
